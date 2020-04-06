@@ -12,12 +12,24 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Job\Ping;
-use Spiral\Prototype\Traits\PrototypeTrait;
+use Spiral\Views\ViewsInterface;
+use Spiral\Jobs\QueueInterface;
 
 class HomeController
 {
-    use PrototypeTrait;
-
+    /** @var ViewsInterface */
+    private $views;
+    /** @var QueueInterface */
+    private $queue;
+    /**
+     * @param ViewsInterface $views
+     * @param QueueInterface $queue
+     */
+    public function __construct(ViewsInterface $views, QueueInterface $queue)
+    {
+        $this->queue = $queue;
+        $this->views = $views;
+    }
     /**
      * @return string
      */
@@ -25,7 +37,6 @@ class HomeController
     {
         return $this->views->render('home.dark.php');
     }
-
     /**
      * Example of exception page.
      */
@@ -33,7 +44,6 @@ class HomeController
     {
         echo $undefined;
     }
-
     /**
      * @return string
      */

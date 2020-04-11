@@ -300,16 +300,16 @@
         },
         {
             "name": "cycle/orm",
-            "version": "v1.2.5",
+            "version": "v1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/orm.git",
-                "reference": "b3644d48fe4ea2008cee74ee5e7ea45654b1f583"
+                "reference": "0aac4295dca682a326d8d18a7013a7040a92d06e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/orm/zipball/b3644d48fe4ea2008cee74ee5e7ea45654b1f583",
-                "reference": "b3644d48fe4ea2008cee74ee5e7ea45654b1f583",
+                "url": "https://api.github.com/repos/cycle/orm/zipball/0aac4295dca682a326d8d18a7013a7040a92d06e",
+                "reference": "0aac4295dca682a326d8d18a7013a7040a92d06e",
                 "shasum": ""
             },
             "require": {
@@ -317,9 +317,9 @@
                 "doctrine/inflector": "^1.3",
                 "doctrine/instantiator": "^1.2",
                 "ext-pdo": "*",
+                "laminas/laminas-hydrator": "^2.4|^3.0",
                 "php": "^7.2",
-                "spiral/database": "^2.3",
-                "zendframework/zend-hydrator": "^2.4|^3.0"
+                "spiral/database": "^2.3"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1",
@@ -340,7 +340,7 @@
                 "MIT"
             ],
             "description": "PHP DataMapper ORM and Data Modelling Engine",
-            "time": "2020-03-25T13:01:40+00:00"
+            "time": "2020-04-07T10:30:51+00:00"
         },
         {
             "name": "cycle/proxy-factory",
@@ -392,16 +392,16 @@
         },
         {
             "name": "cycle/schema-builder",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/schema-builder.git",
-                "reference": "66d6150ab373437290e9efca8fea43e4915adc72"
+                "reference": "2ce9af62ea26673397bcbdabf1c252debd3c4aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/schema-builder/zipball/66d6150ab373437290e9efca8fea43e4915adc72",
-                "reference": "66d6150ab373437290e9efca8fea43e4915adc72",
+                "url": "https://api.github.com/repos/cycle/schema-builder/zipball/2ce9af62ea26673397bcbdabf1c252debd3c4aa5",
+                "reference": "2ce9af62ea26673397bcbdabf1c252debd3c4aa5",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                 "MIT"
             ],
             "description": "Cycle ORM Schema Builder",
-            "time": "2020-02-08T10:43:54+00:00"
+            "time": "2020-04-09T09:25:07+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -878,16 +878,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.16.1",
+            "version": "v2.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "c8afb599858876e95e8ebfcd97812d383fa23f02"
+                "reference": "c460a3cbaa58f983fe026cd52c45950bf61e9239"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/c8afb599858876e95e8ebfcd97812d383fa23f02",
-                "reference": "c8afb599858876e95e8ebfcd97812d383fa23f02",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/c460a3cbaa58f983fe026cd52c45950bf61e9239",
+                "reference": "c460a3cbaa58f983fe026cd52c45950bf61e9239",
                 "shasum": ""
             },
             "require": {
@@ -923,6 +923,7 @@
                 "symfony/yaml": "^3.0 || ^4.0 || ^5.0"
             },
             "suggest": {
+                "ext-dom": "For handling output formats in XML",
                 "ext-mbstring": "For handling non-UTF8 characters in cache signature.",
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "For IsIdenticalString constraint.",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "For XmlMatchesXsd constraint.",
@@ -945,6 +946,7 @@
                     "tests/Test/IntegrationCaseFactory.php",
                     "tests/Test/IntegrationCaseFactoryInterface.php",
                     "tests/Test/InternalIntegrationCaseFactory.php",
+                    "tests/Test/IsIdenticalConstraint.php",
                     "tests/TestCase.php"
                 ]
             },
@@ -963,7 +965,175 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2019-11-25T22:10:32+00:00"
+            "time": "2020-04-10T21:08:06+00:00"
+        },
+        {
+            "name": "laminas/laminas-hydrator",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-hydrator.git",
+                "reference": "5c418d6e37ad363bef5ce1c8a72388243d6c7950"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-hydrator/zipball/5c418d6e37ad363bef5ce1c8a72388243d6c7950",
+                "reference": "5c418d6e37ad363bef5ce1c8a72388243d6c7950",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-stdlib": "^3.2.1",
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^7.2"
+            },
+            "replace": {
+                "zendframework/zend-hydrator": "self.version"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-eventmanager": "^3.2.1",
+                "laminas/laminas-modulemanager": "^2.8",
+                "laminas/laminas-serializer": "^2.9",
+                "laminas/laminas-servicemanager": "^3.3.2",
+                "phpspec/prophecy": "^1.7.5",
+                "phpstan/phpstan": "^0.10.5",
+                "phpunit/phpunit": "^7.5"
+            },
+            "suggest": {
+                "laminas/laminas-eventmanager": "^3.2, to support aggregate hydrator usage",
+                "laminas/laminas-serializer": "^2.9, to use the SerializableStrategy",
+                "laminas/laminas-servicemanager": "^3.3, to support hydrator plugin manager usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-release-2.4": "2.4.x-dev",
+                    "dev-master": "3.0.x-dev",
+                    "dev-develop": "3.1.x-dev"
+                },
+                "laminas": {
+                    "component": "Laminas\\Hydrator",
+                    "config-provider": "Laminas\\Hydrator\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Hydrator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Serialize objects to arrays, and vice versa",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "hydrator",
+                "laminas"
+            ],
+            "time": "2019-12-31T17:06:44+00:00"
+        },
+        {
+            "name": "laminas/laminas-stdlib",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-stdlib.git",
+                "reference": "2b18347625a2f06a1a485acfbc870f699dbe51c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/2b18347625a2f06a1a485acfbc870f699dbe51c6",
+                "reference": "2b18347625a2f06a1a485acfbc870f699dbe51c6",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "replace": {
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "phpbench/phpbench": "^0.13",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev",
+                    "dev-develop": "3.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "SPL extensions, array utilities, error handlers, and more",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "stdlib"
+            ],
+            "time": "2019-12-31T17:51:15+00:00"
+        },
+        {
+            "name": "laminas/laminas-zendframework-bridge",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
+                "reference": "bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9",
+                "reference": "bfbbdb6c998d50dbf69d2187cb78a5f1fa36e1e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                },
+                "laminas": {
+                    "module": "Laminas\\ZendFrameworkBridge"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ZendFrameworkBridge\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
+            "keywords": [
+                "ZendFramework",
+                "autoloading",
+                "laminas",
+                "zf"
+            ],
+            "time": "2020-04-03T16:01:00+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1093,16 +1263,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
+                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
                 "shasum": ""
             },
             "require": {
@@ -1141,7 +1311,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-11-08T13:50:10+00:00"
+            "time": "2020-04-10T16:34:50+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -1791,16 +1961,16 @@
         },
         {
             "name": "spiral/boot",
-            "version": "v1.2.5",
+            "version": "v1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/boot.git",
-                "reference": "3313f9b46dae142dc92dad0338767a21764056eb"
+                "reference": "74ec95b3d306717d1a22f8619e844f4e46192fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/boot/zipball/3313f9b46dae142dc92dad0338767a21764056eb",
-                "reference": "3313f9b46dae142dc92dad0338767a21764056eb",
+                "url": "https://api.github.com/repos/spiral/boot/zipball/74ec95b3d306717d1a22f8619e844f4e46192fd4",
+                "reference": "74ec95b3d306717d1a22f8619e844f4e46192fd4",
                 "shasum": ""
             },
             "require": {
@@ -1836,7 +2006,7 @@
                 }
             ],
             "description": "Environment Bootloader and Dispatch Manager",
-            "time": "2020-01-23T09:55:29+00:00"
+            "time": "2020-04-07T10:00:40+00:00"
         },
         {
             "name": "spiral/code-style",
@@ -3143,16 +3313,16 @@
         },
         {
             "name": "spiral/router",
-            "version": "v1.4.3",
+            "version": "v1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/router.git",
-                "reference": "42550d0ba09bda7c34cd9c874de81fec0df2f3df"
+                "reference": "6020d973c0e00b874a425c29519275243a5b61c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/router/zipball/42550d0ba09bda7c34cd9c874de81fec0df2f3df",
-                "reference": "42550d0ba09bda7c34cd9c874de81fec0df2f3df",
+                "url": "https://api.github.com/repos/spiral/router/zipball/6020d973c0e00b874a425c29519275243a5b61c5",
+                "reference": "6020d973c0e00b874a425c29519275243a5b61c5",
                 "shasum": ""
             },
             "require": {
@@ -3187,7 +3357,7 @@
                 }
             ],
             "description": "Routes, RESTFul, URI generation, Adaptive Patterns",
-            "time": "2019-12-27T08:19:55+00:00"
+            "time": "2020-04-10T11:03:19+00:00"
         },
         {
             "name": "spiral/scaffolder",
@@ -3373,16 +3543,16 @@
         },
         {
             "name": "spiral/stempler",
-            "version": "v2.2.3",
+            "version": "v2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/stempler.git",
-                "reference": "59e0cefce51ce6b2dde05c3aeb90dd8e48c0b392"
+                "reference": "3b586cb4aaca218269ce36f0ed8c51b3fd3c3337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/stempler/zipball/59e0cefce51ce6b2dde05c3aeb90dd8e48c0b392",
-                "reference": "59e0cefce51ce6b2dde05c3aeb90dd8e48c0b392",
+                "url": "https://api.github.com/repos/spiral/stempler/zipball/3b586cb4aaca218269ce36f0ed8c51b3fd3c3337",
+                "reference": "3b586cb4aaca218269ce36f0ed8c51b3fd3c3337",
                 "shasum": ""
             },
             "require": {
@@ -3416,7 +3586,7 @@
                 }
             ],
             "description": "Stempler, HTML markup processor and template engine framework",
-            "time": "2020-04-02T09:21:56+00:00"
+            "time": "2020-04-10T12:58:22+00:00"
         },
         {
             "name": "spiral/stempler-bridge",
@@ -3602,16 +3772,16 @@
         },
         {
             "name": "spiral/validation",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/validation.git",
-                "reference": "bdb3d164c6c1c0d797979ab489093db6fbf39507"
+                "reference": "3be57b60ad376c09765013f5da42bd9b201f7c92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/validation/zipball/bdb3d164c6c1c0d797979ab489093db6fbf39507",
-                "reference": "bdb3d164c6c1c0d797979ab489093db6fbf39507",
+                "url": "https://api.github.com/repos/spiral/validation/zipball/3be57b60ad376c09765013f5da42bd9b201f7c92",
+                "reference": "3be57b60ad376c09765013f5da42bd9b201f7c92",
                 "shasum": ""
             },
             "require": {
@@ -3645,7 +3815,7 @@
                 }
             ],
             "description": "Nested validation, Checkers, Conditional Validation",
-            "time": "2019-12-10T11:01:48+00:00"
+            "time": "2020-04-07T09:25:06+00:00"
         },
         {
             "name": "spiral/views",
@@ -4807,116 +4977,6 @@
             ],
             "abandoned": "laminas/laminas-diactoros",
             "time": "2019-11-13T19:16:13+00:00"
-        },
-        {
-            "name": "zendframework/zend-hydrator",
-            "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-hydrator.git",
-                "reference": "f9987bfa25a89d6191e1dbb0413b3c35613f0271"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/f9987bfa25a89d6191e1dbb0413b3c35613f0271",
-                "reference": "f9987bfa25a89d6191e1dbb0413b3c35613f0271",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2",
-                "zendframework/zend-stdlib": "^3.2.1"
-            },
-            "require-dev": {
-                "phpspec/prophecy": "^1.7.5",
-                "phpstan/phpstan": "^0.10.5",
-                "phpunit/phpunit": "^7.5",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-eventmanager": "^3.2.1",
-                "zendframework/zend-modulemanager": "^2.8",
-                "zendframework/zend-serializer": "^2.9",
-                "zendframework/zend-servicemanager": "^3.3.2"
-            },
-            "suggest": {
-                "zendframework/zend-eventmanager": "^3.2, to support aggregate hydrator usage",
-                "zendframework/zend-serializer": "^2.9, to use the SerializableStrategy",
-                "zendframework/zend-servicemanager": "^3.3, to support hydrator plugin manager usage"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-release-2.4": "2.4.x-dev",
-                    "dev-master": "3.0.x-dev",
-                    "dev-develop": "3.1.x-dev"
-                },
-                "zf": {
-                    "component": "Zend\\Hydrator",
-                    "config-provider": "Zend\\Hydrator\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Hydrator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Serialize objects to arrays, and vice versa",
-            "keywords": [
-                "ZendFramework",
-                "hydrator",
-                "zf"
-            ],
-            "abandoned": "laminas/laminas-hydrator",
-            "time": "2019-03-15T14:12:03+00:00"
-        },
-        {
-            "name": "zendframework/zend-stdlib",
-            "version": "3.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "66536006722aff9e62d1b331025089b7ec71c065"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/66536006722aff9e62d1b331025089b7ec71c065",
-                "reference": "66536006722aff9e62d1b331025089b7ec71c065",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "phpbench/phpbench": "^0.13",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
-                "zendframework/zend-coding-standard": "~1.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2.x-dev",
-                    "dev-develop": "3.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Stdlib\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "SPL extensions, array utilities, error handlers, and more",
-            "keywords": [
-                "ZendFramework",
-                "stdlib",
-                "zf"
-            ],
-            "abandoned": "laminas/laminas-stdlib",
-            "time": "2018-08-28T21:34:05+00:00"
         }
     ],
     "packages-dev": [

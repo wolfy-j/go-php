@@ -11,7 +11,7 @@ namespace App\Database;
 use Cycle\Annotated\Annotation as Cycle;
 
 /**
- * @Cycle\Entity(repository="\App\Repository\AccountRepository")
+ * @Cycle\Entity(repository="\App\Repository\AccountRepository", mapper="TimestampedMapper")
  */
 class Account
 {
@@ -26,7 +26,12 @@ class Account
     public $name;
 
     /**
-     * @Cycle\Column(type = "datetime")
+     * @Cycle\Column(type = "timestamp", default="CURRENT_TIMESTAMP")
      */
     public $created_at;
+
+    /**
+     * @Cycle\Column(type = "timestamp", default="CURRENT_TIMESTAMP")
+     */
+    public $updated_at;
 }

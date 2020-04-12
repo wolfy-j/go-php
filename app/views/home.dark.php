@@ -1,10 +1,5 @@
 <extends:layout.base title="[[Welcome To Spiral]]"/>
 <use:element path="embed/links" as="homepage:links"/>
-
-<stack:push name="styles">
-    <link rel="stylesheet" href="/styles/welcome.css"/>
-</stack:push>
-
 <define:body>
     <div class="wrapper">
         <div class="placeholder">

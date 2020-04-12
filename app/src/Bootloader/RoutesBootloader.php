@@ -56,7 +56,7 @@ class RoutesBootloader extends Bootloader
         );
 
         return $route->withDefaults([
-            'controller' => 'home',
+            'controller' => 'landing',
             'action'     => 'index'
         ]);
     }

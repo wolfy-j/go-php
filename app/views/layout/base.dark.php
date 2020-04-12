@@ -3,6 +3,9 @@
 <head>
     <title>${title}</title>
     <block:head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
         <link rel="stylesheet" href="/css/vendor.css">
         <link rel="stylesheet" href="/css/app.css">
         <stack:collect name="styles" level="2"/>
@@ -17,13 +20,15 @@
     <header/>
 </block:header>
 <block:content>
-    <block:left-sidebar>
-        <left-sidebar/>
-    </block:left-sidebar>
-    <block:body/>
-    <block:right-sidebar>
-        <right-sidebar/>
-    </block:right-sidebar>
+    <div id="wrapper" class="wrapper">
+        <block:left-sidebar>
+            <left-sidebar/>
+        </block:left-sidebar>
+        <block:body/>
+        <block:right-sidebar>
+            <right-sidebar/>
+        </block:right-sidebar>
+    </div>
 </block:content>
 <block:footer>
     <footer/>

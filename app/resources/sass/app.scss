@@ -1,36 +1,4 @@
 /*
-* ==== RESETS ====
-*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-/*
-* ==== IMPORTS ====
-*/
-/*
-* ==== STYLING ====
-*/
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-}
-
-.wrapper {
-  display: flex;
-  height: 100%;
-  padding: 20px;
-}
-
-/*
 * ==== SIDEBAR ====
 */
 .sidebar {
@@ -63,32 +31,6 @@ body {
 }
 
 /*
-* ==== CONTENT ====
-*/
-.content {
-  background-color: #f6f7f8;
-  min-height: 100%;
-  flex-grow: 9;
-  padding: 40px;
-  transform: translate3d(0, 0, 0);
-  transition: transform .3s;
-}
-
-/*
-* ==== TOGGLE BUTTON ====
-*/
-a.button {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-a.button:before {
-  content: '\f0c9';
-  font: 30px fontawesome;
-}
-
-/*
 * ==== MEDIA QUERIES ====
 */
 @media only screen and (max-device-width: 736px) and (orientation: portrait) {
@@ -115,4 +57,40 @@ a.button:before {
   .content a.button {
     display: none;
   }
+}
+
+
+.interactive-bg {
+  height: 100vh;
+  background-color: #00d1b2;
+  -webkit-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+  -moz-box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+  box-shadow: inset 24px 4px 64px -24px rgba(71,71,71,1);
+  padding: 0px;
+}
+@media (max-width: 769px) {
+  .interactive-bg{
+    display: none
+  }
+}
+
+.input {
+  border-radius: 50px;
+}
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+.login-logo {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-height: 100px;
+
+}
+
+.columns{
+  margin: 0px;
 }

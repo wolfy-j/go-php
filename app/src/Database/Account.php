@@ -24,4 +24,9 @@ class Account
      * @Cycle\Column(type = "string")
      */
     public $name;
+
+    /**
+     * @Cycle\Column(type = "datetime")
+     */
+    public $created_at;
 }

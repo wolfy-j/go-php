@@ -11,12 +11,18 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Database\User;
 use App\Job\Ping;
+use Cycle\ORM\Transaction;
+use Spiral\Http\Exception\ClientException\ForbiddenException;
+use Spiral\Prototype\Traits\PrototypeTrait;
 use Spiral\Views\ViewsInterface;
 use Spiral\Jobs\QueueInterface;
 
 class HomeController
 {
+    use PrototypeTrait;
+
     /** @var ViewsInterface */
     private $views;
     /** @var QueueInterface */
@@ -35,7 +41,11 @@ class HomeController
      */
     public function index(): string
     {
-        return $this->views->render('home.dark.php');
+        if ($this->auth->getActor() === null) {
+            throw new ForbiddenException();
+        }
+
+        dump($this->auth->getActor());
     }
     /**
      * Example of exception page.

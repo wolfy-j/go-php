@@ -24,4 +24,14 @@ class User
      * @Cycle\Column(type = "string")
      */
     public $name;
+
+    /**
+     * @var @Cycle\Column(type = "string")
+     */
+    public $username;
+
+    /**
+     * @var @Cycle\Column(type = "string")
+     */
+    public $password;
 }

@@ -12,10 +12,12 @@ declare(strict_types=1);
 namespace App\Bootloader;
 
 use App\Controller\HomeController;
+use App\Controller\Auth\LoginController;
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Router\Route;
 use Spiral\Router\RouteInterface;
 use Spiral\Router\RouterInterface;
+use Spiral\Router\Target\Action;
 use Spiral\Router\Target\Controller;
 use Spiral\Router\Target\Namespaced;
 
@@ -28,10 +30,14 @@ class RoutesBootloader extends Bootloader
     {
         // named route
         $router->setRoute(
-            'html',
-            new Route('/<action>.html', new Controller(HomeController::class))
+            'login',
+            new Route('/login', new Action(LoginController::class, 'login'))
         );
 
+        $router->setRoute(
+            'login.post',
+            (new Route('/login', new Action(LoginController::class, 'loginPost')))->withVerbs('POST')
+        );
         // fallback (default) route
         $router->setDefault($this->defaultRoute());
     }

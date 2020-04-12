@@ -12,6 +12,9 @@ use Cycle\Annotated\Annotation as Cycle;
 
 /**
  * @Cycle\Entity(repository = "App\Repository\UserRepository")
+ * @Cycle\Table(indexes={
+ * @Cycle\Table\Index(columns={"username"}, unique=true)
+ *     })
  */
 class User
 {

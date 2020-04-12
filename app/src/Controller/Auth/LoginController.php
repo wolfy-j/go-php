@@ -38,16 +38,13 @@ class LoginController
         }
 
         // create token
-        $token = $this->authTokens->create(['userID' => $user->id]);
-        $d = $this->auth->start(
-            $token
+        $this->auth->start(
+            $this->authTokens->create(['userID' => $user->id])
         );
 
         return [
             'status'  => 200,
             'message' => 'Authenticated!',
-            'token' => $this->auth->getActor(),
-            'd' => $d
         ];
     }
 

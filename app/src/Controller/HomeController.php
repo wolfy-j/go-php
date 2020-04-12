@@ -14,6 +14,7 @@ namespace App\Controller;
 use App\Database\User;
 use App\Job\Ping;
 use Cycle\ORM\Transaction;
+use Spiral\Auth\AuthContextInterface;
 use Spiral\Http\Exception\ClientException\ForbiddenException;
 use Spiral\Prototype\Traits\PrototypeTrait;
 use Spiral\Views\ViewsInterface;
@@ -41,8 +42,9 @@ class HomeController
      */
     public function index(): string
     {
+
         if ($this->auth->getActor() === null) {
-            throw new ForbiddenException();
+            throw new ForbiddenException('Invalid Login Attempt or user not found');
         }
 
         dump($this->auth->getActor());

@@ -28,7 +28,6 @@ class LandingController
 
     public function index(): string
     {
-        // return 'Hello world';
         return $this->views->render('home.dark.php');
     }
 

@@ -39,7 +39,8 @@
     "cycle/migrations": "^1.0",
     "filp/whoops": "^2.7",
     "spiral/auth": "^1.0",
-    "spiral/auth-http": "^1.0"
+    "spiral/auth-http": "^1.0",
+    "spiral/php-grpc": "^1.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.5",

@@ -1,41 +1,21 @@
 <extends:layout.base title="[[Welcome To Spiral]]"/>
 <use:element path="embed/links" as="homepage:links"/>
+
+<stack:push name="styles">
+    <link rel="stylesheet" href="/styles/welcome.css"/>
+</stack:push>
+
 <define:body>
-    <div class="columns is-vcentered">
-        <div class="login column is-4 ">
-            <section class="section">
-                <div class="has-text-centered">
-                    <img class="login-logo" src="/img/logo_r_resumme.png">
-                </div>
+    <div class="wrapper">
+        <div class="placeholder">
+            <img src="/images/logo.svg" alt="Framework Logotype" width="200px"/>
+            <h2>[[Welcome to Spiral Framework]]</h2>
 
-                <div class="field">
-                    <label class="label">Username</label>
-                    <div class="control has-icons-right">
-                        <input class="input" type="text">
-                        <span class="icon is-small is-right">
-                <i class="fa fa-user"></i>
-              </span>
-                    </div>
-                </div>
+            <homepage:links git="https://github.com/spiral/app" style="font-weight: bold;"/>
 
-                <div class="field">
-                    <label class="label">Password</label>
-                    <div class="control has-icons-right">
-                        <input class="input" type="password">
-                        <span class="icon is-small is-right">
-                <i class="fa fa-key"></i>
-              </span>
-                    </div>
-                </div>
-                <div class="has-text-centered">
-                    <a class="button is-vcentered is-primary is-outlined">Login</a>
-                </div>
-                <div class="has-text-centered">
-                    <a href="signup.html"> Don't you have an account? Sign up now!</a>
-                </div>
-            </section>
-        </div>
-        <div id="particles-js" class="interactive-bg column is-8">
+            <div style="font-size: 12px; margin-top: 10px;">
+                [[This view file is located in]] <b>app/views/home.dark.php</b> [[and rendered by]] <b>Controller\HomeController</b>.
+            </div>
         </div>
     </div>
 </define:body>

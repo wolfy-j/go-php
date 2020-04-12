@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f42466fe17a19e804842c1efc8012a8",
+    "content-hash": "0cd1516f44a50f003fb79e69cd3fa1d2",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -966,6 +966,47 @@
             ],
             "description": "A tool to automatically fix PHP code style",
             "time": "2020-04-10T21:08:06+00:00"
+        },
+        {
+            "name": "google/protobuf",
+            "version": "v3.11.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/protocolbuffers/protobuf-php.git",
+                "reference": "a5001eb559dcaac0bf6d8c7edc52b3828c618185"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/a5001eb559dcaac0bf6d8c7edc52b3828c618185",
+                "reference": "a5001eb559dcaac0bf6d8c7edc52b3828c618185",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to support JSON deserialization"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Protobuf\\": "src/Google/Protobuf",
+                    "GPBMetadata\\Google\\Protobuf\\": "src/GPBMetadata/Google/Protobuf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "proto library for PHP",
+            "homepage": "https://developers.google.com/protocol-buffers/",
+            "keywords": [
+                "proto"
+            ],
+            "time": "2020-02-14T22:17:05+00:00"
         },
         {
             "name": "laminas/laminas-hydrator",
@@ -3253,6 +3294,49 @@
             ],
             "description": "Common pagination interfaces",
             "time": "2019-04-30T11:36:56+00:00"
+        },
+        {
+            "name": "spiral/php-grpc",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/php-grpc.git",
+                "reference": "5a491129cf0795f66a93c2303d8b49bae03e93b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/php-grpc/zipball/5a491129cf0795f66a93c2303d8b49bae03e93b2",
+                "reference": "5a491129cf0795f66a93c2303d8b49bae03e93b2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "google/protobuf": "^3.7",
+                "php": "^7.2",
+                "spiral/roadrunner": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.0",
+                "spiral/code-style": "^1.0"
+            },
+            "type": "server",
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\GRPC\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov / Wolfy-J",
+                    "email": "wolfy.jd@gmail.com"
+                }
+            ],
+            "description": "High-Performance GRPC server for PHP applications",
+            "time": "2020-01-27T15:26:52+00:00"
         },
         {
             "name": "spiral/prototype",
@@ -6481,6 +6565,5 @@
     "platform": {
         "php": ">=7.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }

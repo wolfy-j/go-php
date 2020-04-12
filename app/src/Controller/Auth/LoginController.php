@@ -13,9 +13,7 @@ class LoginController
 
     public function login(LoginRequest $login)
     {
-        return [
-            'Test'
-        ];
+        return $this->views->render('auth/login.dark.php');
     }
 
     public function loginPost(LoginRequest $login)
@@ -40,13 +38,16 @@ class LoginController
         }
 
         // create token
-        $this->auth->start(
-            $this->authTokens->create(['userID' => $user->id])
+        $token = $this->authTokens->create(['userID' => $user->id]);
+        $d = $this->auth->start(
+            $token
         );
 
         return [
             'status'  => 200,
-            'message' => 'Authenticated!'
+            'message' => 'Authenticated!',
+            'token' => $this->auth->getActor(),
+            'd' => $d
         ];
     }
 

@@ -21,6 +21,8 @@ http:
 
   workers:
     command: "php app.php"
+    pool:
+      numWorkers: 40
 
 # queue and jobs
 jobs:
@@ -33,8 +35,8 @@ jobs:
 
   workers:
     command: "php app.php"
-    pool.numWorkers: 1
-    pool.maxJobs:    1
+    pool.numWorkers: 100
+    pool.maxJobs:    100
 
 # serve static files
 static:
@@ -50,3 +52,15 @@ limit:
   services:
     http.maxMemory: 100
     jobs.maxMemory: 100
+    grpc.maxMemory: 100
+
+grpc:
+  listen: tcp://0.0.0.0:50051
+  workers.command: "php app.php"
+
+  # read how to write proto files in the next section
+  proto: "proto/service.proto"
+
+  # tls configuration is optional
+  # tls.key:  "app.key"
+  # tls.cert: "app.crt"

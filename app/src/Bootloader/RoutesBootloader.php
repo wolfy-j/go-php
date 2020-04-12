@@ -36,7 +36,7 @@ class RoutesBootloader extends Bootloader
 
         $router->setRoute(
             'login.post',
-            (new Route('/login', new Action(LoginController::class, 'loginPost')))->withVerbs('POST')
+            (new Route('/do/login', new Action(LoginController::class, 'loginPost')))->withVerbs('POST')
         );
         // fallback (default) route
         $router->setDefault($this->defaultRoute());

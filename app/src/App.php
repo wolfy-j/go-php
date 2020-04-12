@@ -91,6 +91,9 @@ class App extends Kernel
         Framework\Auth\TokenStorage\SessionTokensBootloader::class,
         // Database Session Storage
         Framework\Auth\TokenStorage\CycleTokensBootloader::class,
+
+        // GRPC
+        Framework\GRPC\GRPCBootloader::class,
     ];
 
     /*

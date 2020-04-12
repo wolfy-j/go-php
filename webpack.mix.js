@@ -14,4 +14,5 @@ require('laravel-mix-purgecss');
 mix.js('app/resources/js/app.js', 'public/js').extract()
     .sass('app/resources/sass/app.scss', 'public/css')
     .sass('app/resources/sass/vendor.scss', 'public/css')
+    .copyDirectory('app/resources/img', 'public/img')
     .purgeCss();

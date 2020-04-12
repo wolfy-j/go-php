@@ -1614,9 +1614,9 @@ window.particlesJS.load = function (tag_id, path_config_json, callback) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/sujit/Sites/projects/sahayogi-go/app/resources/js/app.js */"./app/resources/js/app.js");
-__webpack_require__(/*! /home/sujit/Sites/projects/sahayogi-go/app/resources/sass/app.scss */"./app/resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/sujit/Sites/projects/sahayogi-go/app/resources/sass/vendor.scss */"./app/resources/sass/vendor.scss");
+__webpack_require__(/*! /Users/sujit/Sites/projects/sahayogi-go/app/resources/js/app.js */"./app/resources/js/app.js");
+__webpack_require__(/*! /Users/sujit/Sites/projects/sahayogi-go/app/resources/sass/app.scss */"./app/resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/sujit/Sites/projects/sahayogi-go/app/resources/sass/vendor.scss */"./app/resources/sass/vendor.scss");
 
 
 /***/ })
